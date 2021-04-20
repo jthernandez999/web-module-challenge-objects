@@ -15,8 +15,11 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-function createMenuItem(menuItem){
-     menuItem = { name:"tacos", price:8, category:"Lunch",} 
+function createMenuItem(name, price, category){
+   let menuItem = { 
+      name: name, 
+      price : price,
+     category : category} 
  return menuItem
 }
 console.log(createMenuItem('tacos', 8, 'Lunch'))
@@ -30,8 +33,9 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */ 
-
-
+console.log(createMenuItem("pizza", 5, "lunch"))
+console.log(createMenuItem("beignets", 13, "breakfast"))
+console.log(createMenuItem("ice cream",5,"lunch"))
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
 burger object below that automatically calculates price depending on the a string received as a parameter. 
@@ -105,16 +109,10 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(reviews, index) {
-  let newArray =[]
-  for (let i = 0; i < reviews.length; i++){
-    if (reviews[i]!==index){
-    
-    }
- 
-    return   "{name} gave the restaurant a {rating} star review, and their feedback was: {feedback}"}
+function getReviewByIndex(number) {
+  return (reviews.name + "gave the restaurant a" + [rating] +" star review, and their feedback was: " + [feedback])
+
 }
-getReviewByIndex(reviews,0)
 
   
 
